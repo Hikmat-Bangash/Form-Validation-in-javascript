@@ -1,0 +1,109 @@
+*{ box-sizing: border-box; margin: 0%; padding: 0%;}
+body{
+     background-color: black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+}
+#circle{
+background:  linear-gradient(rgb(255, 0, 0),rgb(255, 208, 0),rgb(218, 0, 207),rgb(25, 151, 0));
+position: absolute;
+width: 100%;
+height: 100%;
+clip-path: circle(650px at left 700px);
+z-index: -1;
+}
+#circle2{
+background:  linear-gradient(rgb(0, 68, 255),rgb(255, 72, 0),rgb(218, 0, 11),rgb(151, 0, 106));
+position: absolute;
+width: 100%;
+height: 100%;
+clip-path: circle(650px at right 100px);
+z-index: -1;
+}
+#container{
+background: rgba(255, 255, 255, 0.1);
+border-radius: 10px;
+width: 450px;
+max-width: 100%;        
+overflow: hidden;
+box-shadow: 20px 20px 50px rgba(0, 0,0, 0.5);
+border: 3px solid rgba(255, 255, 255, 0.1); 
+backdrop-filter: blur(2px);
+
+}
+#heading{
+font-family: sans-serif;
+margin-bottom: 10px;   
+padding: 30px;  
+text-align: center; 
+color: white;     
+}
+.form{
+padding: 30px 40px;     
+
+}
+.form_Contain{
+padding-bottom: 20px;
+margin-bottom: 15px;
+position: relative;
+}
+.form_Contain label{
+ font-family: sans-serif;
+ display: inline-block;
+ margin-bottom: 5px;
+ color: rgb(219, 201, 201);
+
+}
+.form_Contain input{
+display: block;
+width: 100%;       
+border: 1px solid gray;
+padding: 10px;
+border-radius: 3px;
+background: rgba(228, 228, 228, 0.1);
+
+}
+
+.form_Contain small{
+visibility: hidden; 
+position:absolute;
+left: 10px;
+top: 65px;
+}
+button{
+background-color: teal;
+color: white;
+width: 100%;
+padding: 7px;
+border: none;
+font-family: sans-serif;
+letter-spacing: 2px;
+font-style: oblique;
+font-size: 20px;
+}
+button:focus{
+outline: none;
+}
+button:hover{
+background-color: rgba(9, 255, 0, 0.219);
+font-weight: 700;
+}
+
+.form_Contain.Success input {         
+border: 2px solid green;
+}
+.form_Contain.error input {         
+border: 2px solid rgb(219, 14, 14);
+}
+
+.form_Contain.purple input {         
+border: 2px solid rgb(0, 21, 212);
+}
+
+
+.form_Contain.error small {  
+color: red;
+visibility: visible;       
+}
